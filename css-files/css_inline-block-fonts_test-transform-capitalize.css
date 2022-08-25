@@ -37,7 +37,7 @@ display:inline-block;
 
 .left_s{
 	
-	background-color:green;
+	background-color:pink;
 
 	height:60vh;
 width:50%;
@@ -47,7 +47,7 @@ display:inline-block;
 }
 .right_s{
 	
-	background-color:red;
+	background-color:cyan;
 	height:60vh;
 width:50%;
 display:inline-block;
