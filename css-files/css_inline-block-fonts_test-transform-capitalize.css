@@ -17,6 +17,24 @@
   margin:30px 15px;
   font-size:18px;
 }
+
+.left_{
+	
+	background-color:green;
+
+	height:60vh;
+width:50%;
+display:inline-block;
+  
+}
+.right_{
+	
+	background-color:red;
+	height:60vh;
+width:50%;
+display:inline-block;
+}
+
 .left_s{
 	
 	background-color:green;
