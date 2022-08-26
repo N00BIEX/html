@@ -23,6 +23,12 @@ a:visited
 {
 	color:wheat;
 }
+.content h3
+{
+        background-color:black;
+        color:white;
+        padding:5px;
+        text-align:center;
 .content
 {
 	margin:20px 3px 6px;
