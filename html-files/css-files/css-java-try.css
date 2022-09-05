@@ -63,7 +63,7 @@ footer ul
 .nav_bar nav ul li {
     display: inline-block;
     margin: 30px 15px;
-    font-size: 12px;
+    font-size: 18px;
 }
 img {
     display: block;
@@ -90,5 +90,4 @@ form input
     box-shadow: 2px 2px 2px lightgrey;
     color: white;
     width: 30%;
-
 }
