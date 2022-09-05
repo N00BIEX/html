@@ -73,6 +73,53 @@ border-radius:8px;
 border:2px solid grey;
 border-radius:8px;
 }
+.download_link{
+border:2px solid lightgrey;
+border-radius:8px;
+background-color:white;
+background-image:url("./images/Minecraft.jpeg");
+background-size:cover;
+background-repeat:no-repeat;
+min-height:55vh;
+margin-bottom:3vh;
+}
+.download_link h4
+{
+margin-top:10px;
+text-align:center;
+font-family: 'Monofett', cursive;
+font-size:3rem;
+}
+.download_link img
+{
+display:block;
+margin-left:auto;
+margin-right:auto;
+border:1px solid lime;
+box-shadow:2px 2px 2px 2px lightgrey;
+}
+
+.version{
+display:block;
+text-align:center;
+padding:2px;
+padding-bottom:5px;
+}
+span.link a{
+display:block;
+color:white;
+text-decoration:none;
+padding:8px;
+width:50%;
+margin:auto;
+text-align:center;
+border:1px solid green;
+background-color:lime;
+border-radius:7px;
+
+
+
+}
 footer{
 padding:4px;
 text-align:center;
