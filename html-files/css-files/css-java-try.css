@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    background-color: lavender;
+    border: 1px solid black;
+    margin: 6px;
+}
+header h3
+{
+
+    margin: 5px;
+    text-align: center;
+    text-decoration: underline overline yellow;
+    color: red;
+    top: 1vh;
+    min-height: 5vh;
+
+}
+h3
+{
+    padding: auto;
+    text-align: center;
+    color: white;
+    background-color: black;
+    min-height: 4vh;
+}
+footer
+{
+    border: 2px solid black;
+    background-color: white;
+    min-height: 30vh;
+
+}
+footer ul li a {
+
+    color: cyan;
+    text-decoration: none;
+}
+footer ul
+{
+    list-style-position: inside;
+    margin: 2em;
+}
+
+.content p
+{
+    margin: 2em;
+    font-family:Courier Times;
+}
+.nav_bar nav ul li a
+{
+    color: white;
+    text-decoration: none;
+}
+.nav_bar {
+    background-color: black;
+    color: white;
+    height: 70px;
+}
+.nav_bar nav ul li {
+    display: inline-block;
+    margin: 30px 15px;
+    font-size: 18px;
+}
+img {
+    display: block;
+    max-width: "100%";
+    width: 80vw;
+    height: auto;
+    margin: 3vh auto;
+}
+iframe
+{
+    width: 80vh;
+    height: auto;
+    border: 1px solid black;
+    box-sizing: border-box;
+    margin: 2em auto;
+}
+form input
+{
+    margin: 1vh 35vw;
+    background-color: lime;
+    border: 2px solid green;
+    box-shadow: 2px 2px 2px lightgrey;
+    color: white;
+    width: 30%;
+
+}
