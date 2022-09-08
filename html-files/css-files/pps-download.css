@@ -52,7 +52,7 @@ body {
     margin:10px auto;
     border-radius:8px;
 }
-.z_arc a,a:visited
+.z_arc a
 {
     display:block;
     color:white;
@@ -63,6 +63,10 @@ body {
     border:1px solid black;
     border-radius:12px;
     text-decoration: none;
+}
+.Z_arc a:visited
+{
+     color:blue;
 }
 table thead,td,caption
 {
