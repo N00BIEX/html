@@ -89,6 +89,14 @@ table thead,td,caption
     font-weight: bold;
     font-size: 2rem;
 }
+.table_ table tr td a{
+    color:lime;
+    text-decoration:none;
+    
+}
+.table_ table tr td a:visited{
+    color:grey;
+}
 .not_avilable{
     visibility: hidden;
 }
