@@ -1,9 +1,10 @@
 
 body{
-background-color:red;
+background-color:black;
 }
 .nav_bar{
-background-color:black;
+background-color:grey;
+border-radius:8px;
 color:white;
 margin:3px;
 }
@@ -27,7 +28,7 @@ header{
 header h1{
 text-align:center;
 font-family: 'Rubik Maze', cursive;
-color:yellow;
+color:white;
 text-decoration: lime underline overline;
 
 }
@@ -35,7 +36,7 @@ text-decoration: lime underline overline;
 .content_{
 border:2px solid black;
 border-radius:8px;
-background-color:lime;
+background-color:#FFFFF0;
 }
 
 .heading_{
@@ -63,7 +64,7 @@ background-color:pink;
 
 .chess_
 {
-background-color:lime;
+background-color:#ffeedc ;
 border:2px solid black;
 margin-top:1em;
 padding:1em;
@@ -119,6 +120,51 @@ border-radius:7px;
 
 
 
+}
+.pps_file
+{
+    border:1px solid grey;
+    background-color: white;
+    background-image:url("https://blog.udemy.com/wp-content/uploads/2014/05/shutterstock_100574980-620x620.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    min-height: 50vh;
+}
+.pps_file h3
+{
+    
+    margin:auto;
+    margin-top:2em;
+    text-align:center;
+    color:lavender;
+    font-size:22px;
+}
+.pps_file img{
+    display:block;
+    margin:auto;
+    margin-top:2em;
+}
+.dis_pps{
+    display: block;
+    margin:3em auto 2em;
+    text-align:center;
+    color:White;
+}
+.pps_file a
+{
+    display:block;
+    border:1 px solid green;
+    border-radius:8px;
+    width:30%;
+    margin:2em auto;
+    color:cyan;
+    background-color:grey;
+    text-align:center;
+    text-decoration: none;
+    font-size:16px;
+}
+.pps_file a:active{
+    color:lime;
 }
 footer{
 padding:4px;
