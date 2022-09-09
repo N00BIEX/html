@@ -6,6 +6,7 @@ body {
     background-attachment: fixed;*/
     background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTCDL9vAespBxt817HV8oh-Z-z-sFtXcU30g&usqp=CAU");
     background-size:contain;
+    background-attachment:fixed;
 }
 .head_c h1
 {
