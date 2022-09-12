@@ -96,6 +96,7 @@ font-size:3rem;
 display:block;
 margin-left:auto;
 margin-right:auto;
+margin-top:22vh;
 border:1px solid lime;
 box-shadow:2px 2px 2px 2px lightgrey;
 }
@@ -142,7 +143,7 @@ border-radius:7px;
 .pps_file img{
     display:block;
     margin:auto;
-    margin-top:2em;
+    margin-top:18vh;
 }
 .dis_pps{
     display: block;
