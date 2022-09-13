@@ -94,7 +94,7 @@ table thead,td,caption
     background-color: #f0ffff;
     width:80vw;
     border-collapse: collapse;
-    height:40vh;
+    min-height:40vh;
 }
 .table_ table thead{
     font-weight:bold;
