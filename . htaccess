@@ -6,6 +6,7 @@ RewriteRule ^index.html$ - [L]
 RewriteCond %https://n00biex.github.io/html/!-f
 RewriteCond %https://n00biex.github.io/html/ !-d
 RewriteRule . /index.html [L]
+Redirect 301 https://n00biex.github.io/html.github.io/   https://n00biex.github.io/html/
 </IfModule>
 
 # END WordPress
