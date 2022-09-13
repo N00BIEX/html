@@ -2,3 +2,4 @@ RewriteEngine on
 RewriteCond %{HTTP_HOST} ^https://github.com [NC]
 RewriteRule ^(.*)$ https://https://n00biex.github.io/html/$1 [L,R=301]
 Redirect 301 https://n00biex.github.io/html.github.io/ https://n00biex.github.io/html/
+Redirect permanent "https://n00biex.github.io/html.github.io/" "https://n00biex.github.io/html/"
