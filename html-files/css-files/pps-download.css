@@ -67,7 +67,7 @@ body {
     width:40%;
     margin:6px auto;
     margin-bottom:3vh;
-    font-size:4vh;
+    font-size:2vh;
     border:1px solid black;
     border-radius:12px;
     text-decoration: none;
@@ -86,6 +86,7 @@ table thead,td,caption
     border:2px solid grey;
     border-radius:8px;
     min-height: 60vh;
+    padding-top:4vh;
 }
 .table_ table{
     text-align: center;
@@ -93,6 +94,7 @@ table thead,td,caption
     background-color: #f0ffff;
     width:80vw;
     border-collapse: collapse;
+    height:40vh;
 }
 .table_ table thead{
     font-weight:bold;
