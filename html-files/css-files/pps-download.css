@@ -53,6 +53,8 @@ body {
 .Z_arc img
 {
     display: block;
+    width:30%;
+    height:auto;
     margin:10px auto;
     border-radius:8px;
 }
@@ -64,6 +66,8 @@ body {
     text-align: center;
     width:40%;
     margin:6px auto;
+    margin-bottom:3vh;
+    font-size:4vh;
     border:1px solid black;
     border-radius:12px;
     text-decoration: none;
