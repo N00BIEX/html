@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <link rel="stylesheet" href="./css-files/chapter 8 animations 3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@1,700&display=swap" rel="stylesheet">
+    <title>
+        chapter 8 Animations
+    </title>
+</head>
+<body>
+    <div id="nav">
+        <div class="back_option">
+            <img id="back_o"src="./images/beach_.jpg" width="24px" alt="options">
+        </div>
+        <div class="option_content">
+            <ul>
+                <li><a href="tel:+91 9463207895">Contact Us</a></li>
+                <hr>
+                <li><a href="../index.html">Home</a></li>
+                <hr>
+                <li><a href="./about.html">About Us</a></li>
+                <hr>
+                <li><a href="">Models</a></li>
+                <hr>
+            </ul>
+            <span id="feed"><a href="#form_">feedback</a></span>
+        </div>
+
+    </div>
+    <header id="nav_o">
+        <nav>
+            <div id="img_box">
+                <img src="./images/beach_.jpg" width="24px" alt="options">
+            </div>
+            <div class="navigator">
+                <ul>
+                    <li> <a href="../index.html">Home</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="animation_head">
+                <h1>ANIMATIONS</h1>
+            </div>
+            <div class="animations_1">
+                <div class="ani1_h">
+                    <h3>Animation<sup><small>1</small></sup></h3>
+                </div>
+                <img src="./images/C-2.png" alt="C" width="120px">
+                <div class="expl_ani1">
+                    <p>
+                        Animation image using transform property , while rotating x ,y and z direction.<br>
+                        Animating with percentage vise.
+                    </p>
+                </div>
+            </div>
+            <div class="animations_2">
+
+                <div class="animations_2_h">
+                    <div class="ani2_h">
+                        <h3>Animation<sup><small>2</small></sup></h3>
+
+                    </div>
+                    <section>
+                        <p>
+                            Scroll images using animation and transform , translate .
+                        </p>
+                    </section>
+                </div>
+                <div class="scroll_images">
+                    <img class="image1" src="./images/img_nature_re.jpg" alt="nature" width="320px" />
+                    <img class="image2" src="./images/bg_night_tree.jpeg" alt="night" width="320px" />
+                    <img class="image3" src="./images/bg_road.jpeg" alt="night" width="320px" />
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <div id="form_feedback">
+        <a name="form_"></a>
+        <h4>FEEDBACK</h4>
+        <form action="mailto:s.s.baghmar@gmail.com" method="post" id="usrform">
+            <label for="name">Name :</label>
+
+            <input type="text" placeholder="Name" name="name">
+            <br>
+
+            <textarea rows="6" cols="50" name="FEEDBACK" form="usrform" placeholder="Enter text here...."></textarea>
+            <br>
+            <input type="submit" id="form_submit">
+        </form>
+    </div>
+    <footer>
+        <div class="footer_ani">
+            <section>
+                <h2>3D&nbspANIMATION</h2>
+            </section>
+        </div>
+    </footer>
+</body>
+<script type="text/javascript">
+    img_box.addEventListener ("click", ()=>
+        {
+            nav.style.display = "none";
+            if (nav.style.display === "none") {
+                nav.style.display = "block";
+                nav.style.height = "45vh";
+                nav_o.style.display = "none";
+            }
+        }
+    )
+    back_o.addEventListener ("click", ()=>
+        {
+            nav.style.height = "1px";
+            nav_o.style.display = "flex";
+            nav.style.display = "none";
+        })
+    feed.addEventListener ("click", ()=>
+        {
+            form_feedback.style.display = "block";
+
+        })
+    form_submit.addEventListener ("click", ()=>
+        {
+            form_feedback.style.display = "none";
+        })
+</script>
+</html>
