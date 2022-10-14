@@ -233,7 +233,16 @@ header nav
     }
     .scroll_images .grid_img
     {
-        grid-column-gap: 60vw;
+        grid-column-gap: 10vw;
+    }
+    .scroll_images
+    {
+        height:30vh;
+    }
+    .grid_img img
+    {
+        height:30vh;
+        width:80vw;
     }
     #form_feedback
     {
