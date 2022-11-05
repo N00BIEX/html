@@ -237,11 +237,11 @@ header nav
     }
     .scroll_images
     {
-        height:30vh;
+        height:auto;
     }
     .grid_img img
     {
-        height:30vh;
+        height:auto;
         width:80vw;
     }
     #form_feedback
