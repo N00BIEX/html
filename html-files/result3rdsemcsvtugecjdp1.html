@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSVTU RESULT GECJDP 2022</title>
+</head>
+<style>
+    #myForm {
+        display: block;
+        position: relative;
+        top: 60px;
+        margin: auto;
+        text-align: center
+        
+
+    }
+    button {
+        display: block;
+        margin-top: 8px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: skyblue;
+        border-radius: 8px;
+    }
+    .heading {
+        text-align: center;
+        margin: auto;
+    }
+    .dis{
+        margin: 5px;
+        display: block;
+    }
+    .dis a{
+        text-decoration: none;
+        color: skyblue;
+    }
+    .titr {
+        color: white;
+    }
+    
+     .form{
+        background-image: url(" https://images.unsplash.com/photo-1543373014-cfe4f4bc1cdf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aGlnaCUyMHJlc29sdXRpb258ZW58MHx8MHx8fDA%3D&w=1000&q=80");
+        background-color: skyblue;
+        background-repeat: no-repeat;
+        min-height: 200px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+    .font-title{
+        display: inline-block;
+        font-size: 6px;
+    }
+</style>
+<body>
+    <div class="heading">
+        <h1>CSVTU Results:</h1>
+        <h4 class="inside-heading">GECJDP<div class="font-title"><sup>3<sup>rd</sup>Sem</sup> </div>2022</h4>
+    </div>
+            <div class="dis">
+            <p>This website allow all GECJDP student of 3rd sem to see their Results of 2022 . But you should be logged in to the main website of CSVTU for once for knowing the result , please visit <a href="https://csvtu.digivarsity.online/Account/Login#" target="_blank">CSVTU WEBSITE </a>for loggin and try again for knowing your result.</p>
+        </div>
+    <div class="form">
+
+    <form id="myForm">
+        <select style="width: 200px; height: 30px; font-size: 14px; border-radius: 5px;margin-top:2px;margin-bottom:3px" id="mySelect">
+            <option value="3008020210">CIVIL</option>
+            <option value="3008039210">MINING</option>
+            <option value="3008024210">ELECTRICAL</option>
+            <option value="3008028210">ET&T</option>
+            <option value="3008033210">IT</option>
+            <option value="3008037210">MECHANICAL</option>
+        </select><br><br>
+        <label for="Roll" class="titr">Roll No. :</label>
+        <input type="text" id="name" placeholder="Enter your csvtu roll no. " name="roll" required>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+    </div>
+
+    <script>
+        document.getElementById("myForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent form submission
+
+            // Retrieve input values
+            var roll_no = document.getElementById("name").value;
+            if (roll_no < 10) {
+                roll_no = "0"+roll_no
+            }
+
+
+
+            //open link
+            // Specify the URL of the editable link
+            //branch wise link
+            var selectElement = document.getElementById("mySelect");
+            var selectedValue = selectElement.value;
+
+            var editableLink = "https://csvtu.digivarsity.online/WebApp/Result/SemesterResult.aspx?S=3%20SEMESTER&E=Nov-Dec%202022&R="+selectedValue+roll_no+"&T=Regular";
+
+            // Display the string
+           // alert(editableLink);
+
+            // Open the link in a new tab
+            var newTab = window.open(editableLink, '_blank');
+
+            // Focus on the new tab to make it the active tab
+            newTab.focus();
+
+        });
+    </script>
+</body>
+</html>
