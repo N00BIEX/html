@@ -72,7 +72,7 @@
             <option value="3008037210">MECHANICAL</option>
         </select><br><br>
         <label for="Roll" class="titr">Roll No. :</label>
-        <input type="text" id="name" placeholder="Enter your csvtu roll no. " name="roll" required>
+        <input type="number" id="name" placeholder="Enter your csvtu roll no. " name="roll" min="0" required>
         <br>
         <button type="submit">Submit</button>
     </form>
@@ -84,17 +84,22 @@
 
             // Retrieve input values
             var roll_no = document.getElementById("name").value;
-            if (roll_no < 10) {
-                roll_no = "0"+roll_no
-            }
-
-
 
             //open link
             // Specify the URL of the editable link
             //branch wise link
             var selectElement = document.getElementById("mySelect");
             var selectedValue = selectElement.value;
+
+            if (roll_no < 10){
+                roll_no = "0" + roll_no;
+        }
+            else if(roll_no >100 && roll_no <1000){
+                selectedValue /=10;
+        }
+            else if(roll_no > 100000000000){
+                selectedValue = "";
+                }
 
             var editableLink = "https://csvtu.digivarsity.online/WebApp/Result/SemesterResult.aspx?S=3%20SEMESTER&E=Nov-Dec%202022&R="+selectedValue+roll_no+"&T=Regular";
 
