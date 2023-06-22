@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Input Example</title>
+</head>
+<style>
+    #myForm {
+        display: block;
+        margin: auto;
+        text-align: center;
+        margin-top: 200px;
+
+    }
+    button {
+        display: block;
+        margin-top: 8px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: skyblue;
+        border-radius: 8px;
+    }
+    .heading {
+        text-align: center;
+        margin: auto;
+    }
+    .titr {
+        color: white;
+    }
+    body {
+        background-image: url(" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXVveYkoxDFY8AzjkYLtTPWwqt8sWBf0DKWQ&usqp=CAU ");
+        background-color: skyblue;
+        background-repeat: no-repeat;;
+    }
+</style>
+<body>
+    <div class="heading">
+        <h1>CSVTU Results:</h1>
+    </div>
+    <form id="myForm">
+        <select style="width: 200px; height: 30px; font-size: 14px; border-radius: 5px;margin-top:2px;margin-bottom:3px" id="mySelect">
+            <option value="3008020210">CIVIL</option>
+            <option value="3008039210">MINING</option>
+            <option value="3008024210">ELECTRICAL</option>
+            <option value="3008028210">ET&T</option>
+            <option value="3008033210">IT</option>
+            <option value="3008037210">MECHANICAL</option>
+        </select><br>
+        <label for="Roll" class="titr">Roll No. :</label>
+        <input type="text" id="name" placeholder="Enter your csvtu roll no. " name="roll" required>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        document.getElementById("myForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent form submission
+
+            // Retrieve input values
+            var roll_no = document.getElementById("name").value;
+            if (roll_no < 10) {
+                roll_no = "0"+roll_no
+            }
+
+
+
+            //open link
+            // Specify the URL of the editable link
+            //branch wise link
+            var selectElement = document.getElementById("mySelect");
+            var selectedValue = selectElement.value;
+
+            var editableLink = "https://csvtu.digivarsity.online/WebApp/Result/SemesterResult.aspx?S=3%20SEMESTER&E=Nov-Dec%202022&R="+selectedValue+roll_no+"&T=Regular";
+
+            // Display the string
+           // alert(editableLink);
+
+            // Open the link in a new tab
+            var newTab = window.open(editableLink, '_blank');
+
+            // Focus on the new tab to make it the active tab
+            newTab.focus();
+
+        });
+    </script>
+</body>
+</html>
