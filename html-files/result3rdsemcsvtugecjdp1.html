@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSVTU RESULT GECJDP 2022</title>
+</head>
+<meta name="viewport" content="width=device-width , initial-scale=1.0">
+<meta name="content-type" content="text/html; charset=UTF-8">
+<meta property="og:title" content="CSVTU RESULTS">
+<meta name="keywords" content="Csvtu results , csvtu , digivarsities,noobiex ,ssb,semseter result, roll number , backlog , regular">
+<meta name="description" content="Result for CSVTU students , roll number wise result.">
+<meta property="og:site_name" content="N00BIEX">
+<style>
+    #popupBox {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        padding: 20px;
+        background-color: #FFF4CA;
+        border: 2px solid #ccc;
+        border-radius: 20px;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 0.5s ease-in;
+        z-index: 2;
+    }
+
+    #popupBox.visible {
+        opacity: 1;
+    }
+    #myForm {
+        display: block;
+        position: relative;
+        top: 60px;
+        margin: auto;
+        text-align: center
+
+
+    }
+    button {
+        display: block;
+        margin-top: 8px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: wheat;
+        border-radius: 8px;
+    }
+    .heading {
+        text-align: center;
+        margin: auto;
+    }
+    .dis {
+        margin: 5px;
+        display: block;
+    }
+    .dis a {
+        text-decoration: none;
+        color: skyblue;
+    }
+    .titr {
+        color: white;
+    }
+
+    .form {
+        background-image: url(" https://images.unsplash.com/photo-1543373014-cfe4f4bc1cdf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aGlnaCUyMHJlc29sdXRpb258ZW58MHx8MHx8fDA%3D&w=1000&q=80");
+        background-color: skyblue;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        min-height: 320px;
+        width: auto;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+    .font-title {
+        display: inline-block;
+        font-size: 6px;
+    }
+    input[type="number"] {
+        padding: 3px;
+        border: 1px solid black;
+        border-radius: 4px;
+        font-size: 12px;
+    }
+    .Isize:hover{
+        width: 45px;
+        font-size: 12px;
+        height: auto;
+        cursor: pointer;
+    }
+</style>
+<body>
+    <div class="heading">
+        <h1>CSVTU Results:</h1>
+        <h4 class="inside-heading">GECJDP<div class="font-title">
+             <sup>3<sup>rd</sup>Sem </sup>
+        </div>
+            2022</h4>
+    </div>
+    <div class="dis">
+        <p>
+            This website allow all GECJDP student of 3rd sem to see their Results of 2022 . But you should be logged in to the main website of CSVTU for once for knowing the result , please visit <a href="https://csvtu.digivarsity.online/Account/Login#" target="_blank">CSVTU WEBSITE </a>for loggin and try again for knowing your result.
+        </p>
+    </div>
+
+
+
+    <div class="form" id="formC">
+
+        <form id="myForm">
+            <label for="semester" class="titr">Semester :</label>
+            <span id="formSemS"> </span><br><br>
+            <label for="roll" class="titr">Roll No.  :</label>
+            <input type="number" id="name" placeholder="Enter your csvtu roll no. " name="roll" min="100000000000" required>
+            <br><br>
+            <input class="optionT" type="radio" name="option" id="option2" value="Regular" onclick="showInputField()" checked> <label for="option2">Regular</label>
+            <input class="optionT" type="radio" name="option" id="option1" value="Backlog" onclick="showInputField()"> <label for="option1"> Backlog</label><br>
+
+            <div id="inputField" style="display: none;">
+                <br>
+                <input type="number" id="textInput" placeholder="enter exam year" min="0">
+                <select name="month" id="months">
+                    <option value="APR-MAY">April-May</option>
+                    <option value="NOV-DEC">Nov-Dec</option>
+                </select>
+            </div>
+            <br>
+            <button type="submit">Submit</button>
+            <button id="admit">Admit card</button>
+        </form>
+    </div>
+
+    <!-- popup box -->
+    <div id="popupBox" >
+        <h2>Welcome to N00BIEX!</h2>
+        <p>
+            Please authenticate yourself in <a href="https://csvtu.digivarsity.online/Account/Login#" target="_blank" style="text-decoration:none;">CSVTU DIGIVARSITY</a> before checking your results on the main website, and try out this website later. After authenticating, please check your results.<br>If you have already been authenticated, kindly ignore this message.
+        </p>
+        <button onclick="closePopup()" class="Isize">Close</button>
+    </div>
+    <script >
+        window.onload = function() {
+            var popupBox = document.getElementById("popupBox");
+            popupBox.classList.add("visible");
+        };
+
+        function closePopup() {
+            var popupBox = document.getElementById("popupBox");
+            popupBox.classList.remove("visible");
+            popupBox.style.display="none";
+        }
+
+    </script>
+    <script>
+        //regular backlog options extends
+        function showInputField() {
+            var option1 = document.getElementById("option1");
+            var option2 = document.getElementById("option2");
+            var inputField = document.getElementById("inputField");
+
+            if (option1.checked) {
+                inputField.style.display = "block";
+            } else if (option2.checked) {
+                inputField.style.display = "none";
+            }
+        }
+
+        // Create a new select element
+        var select = document.createElement("select");
+
+        // Set the ID attribute of the select element
+        select.setAttribute("id", "mySelect");
+        select.setAttribute("name", "semester");
+
+        // Create options using a for loop
+        for (var i = 1; i <= 8; i++) {
+            // Create a new option element
+            var option = document.createElement("option");
+
+            // Set the value and text of the option
+            option.value = i;
+            option.text = i;
+
+            // Append the option to the select element
+            select.appendChild(option);
+        }
+
+        // Append the select element to the document body or any desired container
+        document.body.appendChild(select);
+
+        // Get the form element by ID
+        var form = document.getElementById("formSemS");
+        // Append the select element to the form
+        form.appendChild(select);
+
+
+        document.getElementById("myForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            // Prevent form submission
+
+            // Retrieve input values
+            var roll_no = document.getElementById("name").value;
+
+
+
+
+            var sem = document.getElementById("mySelect").value;
+
+            var year1 = roll_no.slice(7, 9);
+            yearR = parseInt(year1);
+            var year1 = parseInt(yearR)-1;
+            var year = 20;
+
+            function getMonths(number) {
+                if (sem % 2 === 0) {
+                    yearR += sem/2;
+                    return "apr-may";
+                } else {
+                    yearR += (sem-1)/2;
+                    return "nov-dec";
+                }
+            }
+
+            month = getMonths(sem);
+
+
+            //open link
+            // Specify the URL of the editable link
+
+            // Display the string
+            // alert(editableLink);
+
+
+
+
+            //alert("Roll no. : "+roll_no);
+
+
+
+
+            // Get reference to the selected radio button
+            yearRR = year+""+yearR;
+            var selectedOption = document.querySelector('input[name="option"]:checked');
+            if (option1.checked) {
+                month = document.getElementById("months").value;
+                yearR = document.getElementById("textInput").value;
+                if (yearR > 1900) {
+                    yearRR = yearR;
+                } else if (yearR < 10) {
+                    yearRR = "0"+yearR;
+                } else {
+                    yearRR = year+""+yearR;
+                }
+            } else {
+                month = getMonths(sem);
+            }
+            var type = selectedOption.value;
+
+
+
+            var editableLink = "https://csvtu.digivarsity.online/WebApp/Result/SemesterResult.aspx?S="+sem+"%20SEMESTER&E="+month+"%20"+yearRR+"&R="+roll_no+"&T="+type;
+            //alert(editableLink);
+
+            //second sem
+            /* var editableLink = "https://csvtu.digivarsity.online/WebApp/Result/SemesterResult.aspx?S=2%20semester&E=Apr-May%202022&R=300803921049&T=Regular";
+            // first SemesterResult
+            var editableLink = "https://csvtu.digivarsity.online/WebApp/Result/SemesterResult.aspx?S=1%20SEMESTER&E=Nov-Dec%202021&R=300803921050&T=Regular";*/
+
+
+
+            // Open the link in a new tab
+            var newTab = window.open(editableLink, '_blank');
+
+
+            // Focus on the new tab to make it the active tab
+            newTab.focus();
+        });
+
+        document.getElementById("admit").addEventListener("click", function(event) {
+            event.preventDefault();
+            // Prevent form submission
+
+            // Retrieve input values
+            var roll_no = document.getElementById("name").value;
+
+
+
+
+            var sem = document.getElementById("mySelect").value;
+
+            var year = roll_no.slice(7, 9);
+            yearR = parseInt(year);
+            var year = parseInt(yearR)-1;
+
+            function getMonths(number) {
+                if (sem % 2 === 0) {
+                    yearR += sem/2;
+                    return "apr-may";
+                } else {
+                    yearR += (sem-1)/2;
+                    return "nov-dec";
+                }
+            }
+
+            month = getMonths(sem);
+
+
+            //open link
+            // Specify the URL of the editable link
+
+            // Display the string
+            // alert(editableLink);
+
+
+
+
+            //alert("Roll no. : "+roll_no);;
+            var admitlink = "https://csvtu.digivarsity.online/WebApp/Examination/AdmitCard.aspx?RollNo="+roll_no+"&ExamSession="+month+"%20"+year+""+yearR+"&Semester="+sem+"%20SEMESTER";
+
+            var newTab = window.open(admitlink, '_blank')
+            // Focus on the new tab to make it the active tab
+            newTab.focus();
+
+        });
+    </script>
+</body>
+</html>
