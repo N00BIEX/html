@@ -223,6 +223,11 @@
                     return "nov-dec";
                 }
             }
+            var lateral_alter = roll_no.slice(9,12);
+            if (parseInt(lateral_alter) > 100){
+                yearR--;
+                
+            }
 
             month = getMonths(sem);
 
