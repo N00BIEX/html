@@ -56,8 +56,11 @@
             font-family: 'Zilla Slab', serif;
         }
         .card,.card img {
-            //border-color: black;
+            border-color: black;
             border-radius: 24px;
+        }
+        .card img{
+            max-height: 443px;
         }
         .Contact {
             text-decoration: none;
@@ -74,8 +77,7 @@
             font-size: 14px;
             opacity: 0.6;
         }
-
-    .navbar-brand img {
+        .navbar-brand img {
             position: absolute;
             top: -14px;
             left: 0px;
@@ -87,7 +89,6 @@
         a.navbar-brand:hover{
             opacity: 1;
         }
-
 
     </style>
 </head>
@@ -115,6 +116,7 @@
                             <li><a class="dropdown-item" href="https://github.com/N00BIEX/html/tree/main">Git Repository</a></li>
                             <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item" href="https://n00biex.github.io/html/html-files/result3rdsemcsvtugecjdp1.html">CSVTU Semster Result</a></li>
+
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -139,7 +141,7 @@
             </p>
 
         </div>
-        <div class=" m-2 p-2 d-flex justify-content-center flex-wrap">
+        <div class=" m-2 p-2 d-flex flex-wrap">
             <div class="c1">
                 <div class="card" style="width: 18rem;">
                     <img src="https://www.minecraft.net/content/dam/games/minecraft/key-art/Games_Subnav_Minecraft-300x465.jpg" class="card-img-top" alt="image" onload="this.style.display = 'block'">
@@ -173,6 +175,18 @@
                             To check the result, students need to have their CSVTU login credentials. They can log in using their username and password. The result will show the student's total marks, grade, CP, credit, SIP, and CPI.
                         </p>
                         <a href="./html-files/result3rdsemcsvtugecjdp1.html" class="btn btn-primary">Download</a>
+                    </div>
+                </div>
+            </div>
+            <div class="c3">
+                <div class="card" style="width: 18rem;">
+                    <img src="./html-files/images/pyq1.jpg" alt="image" onload="this.style.display = 'block'">
+                    <div class="card-body">
+                        <h5 class="card-title">CSVTU PYQP</h5>
+                        <p class="card-text">
+                            Previous year question paper for student of CSVTU university B.Tech progrram .These papers are a valuable resource for students who are preparing for their exams.
+                        </p>
+                        <a href="./html-files/pypq.html" class="btn btn-primary">Download</a>
                     </div>
                 </div>
             </div>
@@ -218,7 +232,7 @@
     </div>
 </div>
 <div class="container-fluid bg-dark " data-bs-theme="dark" style="color:white; text-align:center; position:relative; bottom:0px; top:40vh;">
-    <div class="bottom-text footer p-2 m-0" style="background-color:#292929">
+    <div class="bottom-text p-2 m-0" style="background-color:#292929">
         <hr>
         <a href="mailto:s.s.baghmar@gmail.com" class="contact">CONTACT US</a>
         <ul style="text-align:left;">
@@ -234,4 +248,4 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 
 </body>
-    </html>
+</html>
