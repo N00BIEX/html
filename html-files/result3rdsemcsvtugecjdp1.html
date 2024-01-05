@@ -14,6 +14,7 @@
 <link rel="shortcut icon" href="./images/resulti.ico" type="image/x-icon">
 <link rel="icon" href="./images/resulti.jpg" type="image/jpeg">
 <style>
+
     #popupBox {
         position: fixed;
         top: 50%;
@@ -32,6 +33,10 @@
 
     #popupBox.visible {
         opacity: 1;
+        background-image: linear-gradient(to top left, lightgrey , white);
+    }
+    button{
+        background-image: linear-gradient(to top left, #DEE2E6 , white);
     }
     #myForm {
         display: block;
@@ -47,7 +52,6 @@
         margin-top: 8px;
         margin-left: auto;
         margin-right: auto;
-        background-color: wheat;
         border-radius: 8px;
     }
     .heading {
@@ -63,12 +67,12 @@
         color: skyblue;
     }
     .titr {
-        color: white;
+        font-weight: bold;
     }
 
     .form {
-        background-image: url(" https://images.unsplash.com/photo-1543373014-cfe4f4bc1cdf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aGlnaCUyMHJlc29sdXRpb258ZW58MHx8MHx8fDA%3D&w=1000&q=80");
-        background-color: skyblue;
+        background-image: url(" https://c.stocksy.com/a/hSQB00/z9/2723331.jpg");
+        background-color: white;
         background-repeat: no-repeat;
         object-fit: fill;
         min-height: 320px;
@@ -86,7 +90,8 @@
         border-radius: 4px;
         font-size: 12px;
     }
-    .Isize:hover{
+    
+    .Isize:hover {
         width: 45px;
         font-size: 12px;
         height: auto;
@@ -95,14 +100,11 @@
 </style>
 <body>
     <div class="heading">
-        <h1>CSVTU Results:</h1>
-        <h4 class="inside-heading">GECJDP<div class="font-title">
-        </div>
-            2022</h4>
+        <h1>CSVTU RESULT</h1>
     </div>
     <div class="dis">
         <p>
-            This website allow all GECJDP student of 3rd sem to see their Results of 2022 . But you should be logged in to the main website of CSVTU for once for knowing the result , please visit <a href="https://csvtu.digivarsity.online/Account/Login#" target="_blank">CSVTU WEBSITE </a>for loggin and try again for knowing your result.
+            This robust virtual platform empowers CSVTU matriculants, irrespective of their academic term, to readily retrieve and decipher their examination outcomes. However, for initial verification purposes, a single login to the designated portal on the official <a href="https://csvtu.digivarsity.online/Account/Login#" target="_blank">CSVTU WEBSITE </a> is necessary. Following successful authentication, you will be granted unimpeded access to your detailed performance report.
         </p>
     </div>
 
@@ -134,14 +136,14 @@
     </div>
 
     <!-- popup box -->
-    <div id="popupBox" >
+    <div id="popupBox">
         <h2>Welcome to N00BIEX!</h2>
         <p>
             Please authenticate yourself in <a href="https://csvtu.digivarsity.online/Account/Login#" target="_blank" style="text-decoration:none;">CSVTU DIGIVARSITY</a> before checking your results on the main website, and try out this website later. After authenticating, please check your results.<br>If you have already been authenticated, kindly ignore this message.
         </p>
         <button onclick="closePopup()" class="Isize">Close</button>
     </div>
-    <script >
+    <script>
         window.onload = function() {
             var popupBox = document.getElementById("popupBox");
             popupBox.classList.add("visible");
@@ -150,7 +152,7 @@
         function closePopup() {
             var popupBox = document.getElementById("popupBox");
             popupBox.classList.remove("visible");
-            popupBox.style.display="none";
+            popupBox.style.display = "none";
         }
 
     </script>
@@ -223,10 +225,10 @@
                     return "nov-dec";
                 }
             }
-            var lateral_alter = roll_no.slice(9,12);
-            if (parseInt(lateral_alter) > 100){
+            var lateral_alter = roll_no.slice(9, 12);
+            if (parseInt(lateral_alter) > 100) {
                 yearR--;
-                
+
             }
 
             month = getMonths(sem);
