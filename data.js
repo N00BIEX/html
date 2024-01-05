@@ -41,11 +41,11 @@ const cards = [
     text: "Telegram channel where all notes for 3<sup>rd</sup> year & and 4<sup>th</sup> year students. Provided with notes, books pdf, and PYPQ.",
     link: "https://t.me/Ajaychandra9111911635"
   },
-  {
-    image: "./html-files/images/note_down.jpg",
-    title: "Notes",
-    text: "N00BIEX serves as a comprehensive digital repository of meticulously curated academic resources. It grants unfettered access to an extensive collection of meticulously prepared notes and digitized textbooks in PDF format.",
-    link: "./html-files/notes_download.html"
-  }
+ // {
+ //   image: "./html-files/images/note_down.jpg",
+ //   title: "Notes",
+ //   text: "N00BIEX serves as a comprehensive digital repository of meticulously curated academic resources. It grants unfettered access to an extensive collection of meticulously prepared notes and digitized textbooks in PDF format.",
+ //   link: "./html-files/notes_download.html"
+ // }
   // Add more objects for additional cards
 ];
