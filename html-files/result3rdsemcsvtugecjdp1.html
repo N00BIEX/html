@@ -167,6 +167,7 @@
                 inputField.style.display = "block";
             } else if (option2.checked) {
                 inputField.style.display = "none";
+                location.reload();
             }
         }
 
@@ -325,6 +326,10 @@
 
 
             //alert("Roll no. : "+roll_no);;
+            backAdmitYear=document.getElementById("textInput").value;
+            if(backAdmitYear){
+                yearR=backAdmitYear.slice(2);
+            }
             var admitlink = "https://csvtu.digivarsity.online/WebApp/Examination/AdmitCard.aspx?RollNo="+roll_no+"&ExamSession="+month+"%20"+year+""+yearR+"&Semester="+sem+"%20SEMESTER";
 
             var newTab = window.open(admitlink, '_blank')
