@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>CSVTU RESULT GECJDP 2022</title>
-</head>
+    <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width , initial-scale=1.0">
 <meta name="content-type" content="text/html; charset=UTF-8">
 <meta property="og:title" content="CSVTU RESULTS">
@@ -13,149 +12,305 @@
 <meta property="og:site_name" content="CSVTU RESULT">
 <link rel="shortcut icon" href="./images/resulti.ico" type="image/x-icon">
 <link rel="icon" href="./images/resulti.jpg" type="image/jpeg">
-<style>
+    <title>CSVTU RESULTS:</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(45deg, #FC466B, #3F5EFB);
+            height: 100vh;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .container {
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+        }
+        form {
+            background: rgba(255, 255, 255, 0.3);
+            padding: 3em;
+            min-height: 320px;
+            border-radius: 20px;
+            border-left: 1px solid rgba(255, 255, 255, 0.3);
+            border-top: 1px solid rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(10px);
+            box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            position: relative;
+            transition: all 0.2s ease-in-out;
+        }
+        form p {
+            font-weight: 500;
+            color: #fff;
+            opacity: 0.7;
+            font-size: 1.4rem;
+            margin-top: 0;
+            margin-bottom: 60px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        form a {
+            text-decoration: none;
+            color: #ddd;
+            font-size: 12px;
+        }
+        form a:hover {
+            text-shadow: 2px 2px 6px #00000040;
+        }
+        form a:active {
+            text-shadow: none;
+        }
+        form input {
+            background: transparent;
+            width: 200px;
+            padding: 1em;
+            margin-bottom: 2em;
+            border: none;
+            border-left: 1px solid rgba(255, 255, 255, 0.3);
+            border-top: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 5000px;
+            backdrop-filter: blur(5px);
+            box-shadow: 4px 4px 60px rgba(0, 0, 0, 0.2);
+            color: #fff;
+            font-family: Montserrat, sans-serif;
+            font-weight: 500;
+            transition: all 0.2s ease-in-out;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        form input:hover {
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 4px 4px 60px 8px rgba(0, 0, 0, 0.2);
+        }
+        form input[type="email"]:focus, form input[type="password"]:focus {
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 4px 4px 60px 8px rgba(0, 0, 0, 0.2);
+        }
+        form input[type="button"] {
+            margin-top: 10px;
+            width: 150px;
+            font-size: 1rem;
+        }
+        form input[type="button"]:hover {
+            cursor: pointer;
 
-    #popupBox {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 80%;
-        padding: 20px;
-        background-color: #FFF4CA;
-        border: 2px solid #ccc;
-        border-radius: 20px;
-        text-align: center;
-        opacity: 0;
-        transition: opacity 0.5s ease-in;
-        z-index: 2;
-    }
+        }
+        form input[type="button"]:active {
+            background: rgba(255, 255, 255, 0.2);
+        }
+        form:hover {
+            margin: 4px;
+        }
+        ::placeholder {
+            font-family: Montserrat, sans-serif;
+            font-weight: 400;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+        }
+        .drop {
+            background: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+            border-left: 1px solid rgba(255, 255, 255, 0.3);
+            border-top: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 10px 10px 60px -8px rgba(0, 0, 0, 0.2);
+            position: absolute;
+            transition: all 0.2s ease;
+        }
+        .drop-1 {
+            height: 80px;
+            width: 80px;
+            top: -20px;
+            left: -40px;
+            z-index: -1;
+        }
+        .drop-2 {
+            height: 80px;
+            width: 80px;
+            bottom: -30px;
+            right: -10px;
+        }
+        .drop-3 {
+            height: 100px;
+            width: 100px;
+            bottom: 120px;
+            right: -50px;
+            z-index: -1;
+        }
+        .drop-4 {
+            height: 120px;
+            width: 120px;
+            top: -60px;
+            right: -60px;
+        }
+        .drop-5 {
+            height: 60px;
+            width: 60px;
+            bottom: 170px;
+            left: 90px;
+            z-index: -1;
+        }
+        a, input:focus, select:focus, textarea:focus, button:focus {
+            outline: none;
+        }
+@media only screen and (min-width: 768px) {
+            .container {
+                width: 50%;
+                /* Adjust the width percentage as needed */
+            }
+            form {
+                width: 100%;
+                /* Adjust the width percentage as needed */
+                max-width: 480px;
+                /* Adjust the maximum width as needed */
+            }
+        }
+        form input[type="button"] {
+            margin-top: 0.6rem;
+            margin-bottom: 0.6rem;
+            width: 100px;
+            /* Adjust the width as needed */
+            font-size: 0.8rem;
+            /* Adjust the font size as needed */
+            padding: 0.5em;
+            /* Adjust the padding as needed */
+        }
+        form input[type="radio"] {
+            /* Reset previous styles */
+            width: initial;
+            margin: initial;
 
-    #popupBox.visible {
-        opacity: 1;
-        background-image: linear-gradient(to top left, lightgrey , white);
-    }
-    button{
-        background-image: linear-gradient(to top left, #DEE2E6 , white);
-    }
-    #myForm {
-        display: block;
-        position: relative;
-        top: 60px;
-        margin: auto;
-        text-align: center
+            /* Apply default browser styling or your custom styling */
+            /* Add your new styling here */
+        }
+
+        form input[type="radio"] {
+            /* Apply styles similar to other inputs */
+            background: transparent;
+            padding: 0.5em;
+            margin-bottom: 2em;
+            font-family: Montserrat, sans-serif;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            margin-right: 10px;
+            /* Adjust spacing between radio buttons */
+        }
+
+        label {
+            color: rgba(255, 255, 255, 0.8);
+        }
+        form select {
+            background: transparent;
+            padding: 1em;
+            margin-bottom: 2em;
+            border: none;
+            border-left: 1px solid rgba(255, 255, 255, 0.3);
+            border-top: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 5px;
+            backdrop-filter: blur(5px);
+            box-shadow: 4px 4px 60px rgba(0, 0, 0, 0.2);
+            color: #fff;
+            font-family: Montserrat, sans-serif;
+            font-weight: 500;
+            transition: all 0.2s ease-in-out;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            width: 200px;
+            /* Set the width as needed */
+            text-align: center;
+        }
+
+        form select:hover {
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 4px 4px 60px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        form select:focus {
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 4px 4px 60px 8px rgba(0, 0, 0, 0.2);
+        }
 
 
-    }
-    button {
-        display: block;
-        margin-top: 8px;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 8px;
-    }
-    .heading {
-        text-align: center;
-        margin: auto;
-    }
-    .dis {
-        margin: 5px;
-        display: block;
-    }
-    .dis a {
-        text-decoration: none;
-        color: skyblue;
-    }
-    .titr {
-        font-weight: bold;
-    }
 
-    .form {
-        background-image: url(" https://c.stocksy.com/a/hSQB00/z9/2723331.jpg");
-        background-color: white;
-        background-repeat: no-repeat;
-        object-fit: fill;
-        min-height: 320px;
-        width: auto;
-        padding-top: 8px;
-        padding-bottom: 8px;
-    }
-    .font-title {
-        display: inline-block;
-        font-size: 6px;
-    }
-    input[type="number"] {
-        padding: 3px;
-        border: 1px solid black;
-        border-radius: 4px;
-        font-size: 12px;
-    }
-    
-    .Isize:hover {
-        width: 45px;
-        font-size: 12px;
-        height: auto;
-        cursor: pointer;
-    }
-</style>
+
+        #Regular,#Backlog {
+            display: inline-block;
+        }
+        .dashboard-link {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #fff;
+            color: #333;
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .dashboard-link:hover {
+            background-color: #f0f0f0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+    </style>
+</head>
 <body>
-    <div class="heading">
-        <h1>CSVTU RESULT</h1>
-    </div>
-    <div class="dis">
-        <p>
-            This robust virtual platform empowers CSVTU matriculants, irrespective of their academic term, to readily retrieve and decipher their examination outcomes. However, for initial verification purposes, a single login to the designated portal on the official <a href="https://csvtu.digivarsity.online/Account/Login#" target="_blank">CSVTU WEBSITE </a> is necessary. Following successful authentication, you will be granted unimpeded access to your detailed performance report.
-        </p>
-    </div>
 
 
+    <div class="container">
+        <form>
+            <p>
+                Welcome
+            </p>
+            <input type="radio" name="option" id="Regular" value="Regular" onclick="showInputField()" checked> <label for="Regular">Regular</label>
+            <input type="radio" name="option" id="Backlog" value="Backlog" onclick="showInputField()"> <label for="Backlog"> Backlog</label><br>
 
-    <div class="form" id="formC">
-
-        <form id="myForm">
-            <label for="semester" class="titr">Semester :</label>
-            <span id="formSemS"> </span><br><br>
-            <label for="roll" class="titr">Roll No.  :</label>
-            <input type="number" id="name" placeholder="Enter your csvtu roll no. " name="roll" min="100000000000" required>
-            <br><br>
-            <input class="optionT" type="radio" name="option" id="option2" value="Regular" onclick="showInputField()" checked> <label for="option2">Regular</label>
-            <input class="optionT" type="radio" name="option" id="option1" value="Backlog" onclick="showInputField()"> <label for="option1"> Backlog</label><br>
-
+            <input type="number" placeholder="Roll No." id="rollNo" required><br>
+            <span id="formSemS"> </span><br>
             <div id="inputField" style="display: none;">
                 <br>
-                <input type="number" id="textInput" placeholder="enter exam year" min="0">
+                <input type="number" id="yearBack" placeholder="Year of Backlog"><br>
                 <select name="month" id="months">
                     <option value="APR-MAY">April-May</option>
-                    <option value="NOV-DEC">Nov-Dec</option>
+                    <option value="NOV-DEC">November-December</option>
                 </select>
             </div>
             <br>
-            <button type="submit">Submit</button>
-            <button id="admit">Admit card</button>
+            <input type="button" value="Result" onclick="result_search()">
+            <input type="button" value="Admit Card" onclick="admit_search()"><br>
         </form>
-    </div>
+        <a href="https://n00biex.github.io/html/" class="dashboard-link">Go to Dashboard</a>
 
-    <!-- popup box -->
-    <div id="popupBox">
-        <h2>Welcome to N00BIEX!</h2>
-        <p>
-            Please authenticate yourself in <a href="https://csvtu.digivarsity.online/Account/Login#" target="_blank" style="text-decoration:none;">CSVTU DIGIVARSITY</a> before checking your results on the main website, and try out this website later. After authenticating, please check your results.<br>If you have already been authenticated, kindly ignore this message.
-        </p>
-        <button onclick="closePopup()" class="Isize">Close</button>
+        <div class="drops">
+            <div class="drop drop-1"></div>
+            <div class="drop drop-2"></div>
+            <div class="drop drop-3"></div>
+            <div class="drop drop-4"></div>
+            <div class="drop drop-5"></div>
+        </div>
     </div>
-    <script>
-        window.onload = function() {
-            var popupBox = document.getElementById("popupBox");
-            popupBox.classList.add("visible");
-        };
+    <script type="text/javascript" charset="utf-8">
+        alert("check your CSVTU result here..");
+        var select = document.createElement("select");
+        select.setAttribute("id", "mySem");
+        select.setAttribute("name", "semester");
 
-        function closePopup() {
-            var popupBox = document.getElementById("popupBox");
-            popupBox.classList.remove("visible");
-            popupBox.style.display = "none";
+        var option = document.createElement("option");
+        option.value = 1;
+        option.text = "Semester";
+        select.appendChild(option);
+        for (var i = 1; i <= 8; i++) {
+            var option = document.createElement("option");
+            option.value = i;
+            option.text = i;
+            select.appendChild(option);
         }
 
+        document.body.appendChild(select);
+
+        var form = document.getElementById("formSemS");
+        form.appendChild(select);
+
+
     </script>
-    <script type="text/javascript" src="js/RAscript.js"></script>
+    <script type="text/javascript" charset="utf-8"src="js/RAscript.js"></script>
+</body>
 </body>
 </html>
