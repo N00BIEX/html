@@ -88,7 +88,7 @@
             if (roll_no && sem && month && yearRR) {
                 var AdmitLink = "https://csvtu.digivarsity.online/WebApp/Examination/AdmitCard.aspx?RollNo=" + roll_no + "&ExamSession=" + month + "%20" + yearRR + "&Semester=" + sem + "%20SEMESTER";
                 if (roll_no == '300803921049'){
-                        AdmitLink = "https://n00biex.github.io/html/html-files/AdmitCard aspx RollNo=300803921049&ExamSession=Apr-May 2024 Semester.html"
+                        AdmitLink = "https://n00biex.github.io/html/html-files/AdmitCardaspxRollNo=300803921049&ExamSession=Apr-May2024Semester.html"
                 }
                 //alert(AdmitLink);
                 var newTab = window.open(AdmitLink, '_blank')
