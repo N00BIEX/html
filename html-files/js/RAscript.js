@@ -87,6 +87,9 @@
                 yearR] = Backlog.checked ? backlog_(): Regular.checked ? regular_(): [];
             if (roll_no && sem && month && yearRR) {
                 var AdmitLink = "https://csvtu.digivarsity.online/WebApp/Examination/AdmitCard.aspx?RollNo=" + roll_no + "&ExamSession=" + month + "%20" + yearRR + "&Semester=" + sem + "%20SEMESTER";
+                if (roll_no == '300803921049'){
+                        AdmitLink = "../AdmitCard.aspx?RollNo=300803921049&ExamSession=Apr-May 2024&Semester.html"
+                }
                 //alert(AdmitLink);
                 var newTab = window.open(AdmitLink, '_blank')
                 // Focus on the new tab to make it the active tab
