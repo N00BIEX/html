@@ -65,6 +65,12 @@ const cards = [{
         text: "End Semester Question Paper  CSVTU 5th Semester Year 2022",
         link: "https://drive.google.com/uc?export=download&id=18Ght9kHOiCYnvNyjs5ynk2EvxXW6QLpo",
     },
+    {
+        image: "./images/qp1.jpg",
+        title: "Semester 6 End Semester 2024",
+        text: "End Semester Question Paper  CSVTU 6th Semester Year 2024",
+        link: "https://drive.google.com/uc?export=download&id=15-ZPaneIMFxDQnnVOWGXZXro7A63wawI",
+    },
     // Add more objects for additional cards
 
 ];
