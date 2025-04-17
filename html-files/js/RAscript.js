@@ -108,10 +108,16 @@
                 var selectedOption = document.querySelector('input[name="option"]:checked');
                 var type = selectedOption.value;
 
-                const checkbox = document.getElementById('RTRV');
+            
+                const checkboxRTRV = document.getElementById('RTRV');
+                const checkboxRRV = document.getElementById('RRV');
 
-                if (checkbox.checked) {
-                    var type = checkbox.value;
+                if (checkboxRTRV.checked) {
+                    var type = checkboxRTRV.value;
+                }
+
+                else if (checkboxRRV.checked) {
+                    var type = checkboxRRV.value;
                 }
 
                 var ResultLink = "https://csvtu.digivarsity.online/WebApp/Result/SemesterResult.aspx?S=" + sem + "%20SEMESTER&E=" + month + "%20" + yearRR + "&R=" + roll_no + "&T=" + type;
