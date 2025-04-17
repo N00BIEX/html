@@ -107,6 +107,13 @@
             if (roll_no && sem && month && yearRR) {
                 var selectedOption = document.querySelector('input[name="option"]:checked');
                 var type = selectedOption.value;
+
+                const checkbox = document.getElementById('RTRV');
+
+                if (checkbox.checked) {
+                    var type = checkbox.value;
+                }
+
                 var ResultLink = "https://csvtu.digivarsity.online/WebApp/Result/SemesterResult.aspx?S=" + sem + "%20SEMESTER&E=" + month + "%20" + yearRR + "&R=" + roll_no + "&T=" + type;
                 //alert(ResultLink);
                 var newTab = window.open(ResultLink, '_blank')
