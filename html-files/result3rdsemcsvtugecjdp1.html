@@ -273,7 +273,13 @@
                     <option value="NOV-DEC">November-December</option>
                 </select>
             </div>
-            <br>
+            <div class="form-check">
+                <input class="form-check-input" style="width:1em;" type="checkbox" value="RTRV" id="RTRV">
+                <label class="form-check-label" for="RTRV">
+                    RTRV
+                </label>
+            </div>
+
             <input type="button" value="Result" onclick="result_search()">
             <input type="button" value="Admit Card" onclick="admit_search()"><br>
         </form>
@@ -301,9 +307,12 @@
             option.value = i;
             option.text = i;
             select.appendChild(option);
+            option.style.color = "black";
         }
 
         document.body.appendChild(select);
+        
+
 
         var form = document.getElementById("formSemS");
         form.appendChild(select);
