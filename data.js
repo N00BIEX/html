@@ -42,7 +42,7 @@ const cards = [
     link: "https://t.me/Ajaychandra9111911635"
   },
   {
-    image: "./html-files/images/black_book.jpg",
+    image: "./html-files/images/black_book.png",
     title: "Black Book",
     text: "Major project , mining engineering branch refrence book and docx(Word) file for editing.",
     link: "https://drive.google.com/drive/folders/1AqPfUthO1uFPJz4GUDgkdnA1xC5MINGv?usp=drive_link"
