@@ -41,6 +41,12 @@ const cards = [
     text: "Telegram channel where all notes for 3<sup>rd</sup> year & and 4<sup>th</sup> year students. Provided with notes, books pdf, and PYPQ.",
     link: "https://t.me/Ajaychandra9111911635"
   },
+  {
+    image: "./html-files/images/black_book.jpg",
+    title: "Black Book",
+    text: "Major project , mining engineering branch refrence book and docx(Word) file for editing.",
+    link: "https://drive.google.com/drive/folders/1AqPfUthO1uFPJz4GUDgkdnA1xC5MINGv?usp=drive_link"
+  },
  // {
  //   image: "./html-files/images/note_down.jpg",
  //   title: "Notes",
