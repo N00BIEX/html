@@ -251,12 +251,68 @@
         }
 
     </style>
+    <style>
+    .info-container {
+      position: absolute;
+      display: inline-block;
+      cursor: pointer;
+      left: 5%;
+      top: 3%;
+    }
+
+    .info-icon {
+      background-color: transparent;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      padding: 8px 12px;
+      font-size: 16px;
+    }
+
+    .info-text {
+      visibility: hidden;
+      width: 200px;
+      background-color: #333;
+      color: #fff;
+      text-align: left;
+      border-radius: 6px;
+      padding: 8px;
+      position: absolute;
+      z-index: 1;
+      top: 50%;
+      left: 110%;
+      transform: translateY(-50%);
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .info-container:hover .info-text {
+      visibility: visible;
+      opacity: 1;
+    }
+    </style>
 </head>
 <body>
 
 
     <div class="container">
         <form>
+            
+            <div class="info-container">
+                <button class="info-icon">ℹ️</button>
+                    <div class="info-text" style="font-size: 16px; line-height: 1.6; max-width: 600px;">
+                        ✅ Please log in at 
+                        <a href="https://csvtu.digivarsity.online/Account/Login" 
+                                target="_blank" 
+                                
+                                style="font-size: 1em; font-style: italic; color: #c1dcb3">
+                                CSVTU Official Website
+                        </a> 
+                        and then return to this platform to continue.
+                    </div>
+
+            </div>
+            
             <p>
                 Welcome
             </p>
