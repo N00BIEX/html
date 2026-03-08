@@ -2,399 +2,229 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width , initial-scale=1.0">
-<meta name="content-type" content="text/html; charset=UTF-8">
-<meta property="og:title" content="CSVTU RESULTS">
-<meta name="keywords" content="Csvtu results , csvtu , digivarsities,noobiex ,ssb,semseter result, roll number , backlog , regular">
-<meta name="description" content="Result for CSVTU students , roll number wise result.">
-<meta property="og:site_name" content="N00BIEX">
-<meta property="og:image" content="./images/resulti.jpg">
-<meta property="og:site_name" content="CSVTU RESULT">
-<link rel="shortcut icon" href="./images/resulti.ico" type="image/x-icon">
-<link rel="icon" href="./images/resulti.jpg" type="image/jpeg">
-    <title>CSVTU RESULTS:</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSVTU Portal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --primary: #8b5cf6; /* Soft Purple */
+            --secondary: #ec4899; /* Pink Glow */
+            --bg-gradient: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+            --glass-bg: rgba(255, 255, 255, 0.05);
+            --glass-border: rgba(255, 255, 255, 0.1);
+            --text: #ffffff;
+            --dim: rgba(255,255,255,0.6);
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Plus Jakarta Sans', sans-serif; }
+
         body {
-            background: linear-gradient(45deg, #FC466B, #3F5EFB);
-            height: 100vh;
-            font-family: 'Montserrat', sans-serif;
-        }
-        .container {
-            position: absolute;
-            transform: translate(-50%, -50%);
-            top: 50%;
-            left: 50%;
-        }
-        form {
-            background: rgba(255, 255, 255, 0.3);
-            padding: 3em;
-            min-height: 320px;
-            border-radius: 20px;
-            border-left: 1px solid rgba(255, 255, 255, 0.3);
-            border-top: 1px solid rgba(255, 255, 255, 0.3);
-            backdrop-filter: blur(10px);
-            box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
-            text-align: center;
-            position: relative;
-            transition: all 0.2s ease-in-out;
-        }
-        form p {
-            font-weight: 500;
-            color: #fff;
-            opacity: 0.7;
-            font-size: 1.4rem;
-            margin-top: 0;
-            margin-bottom: 60px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-        }
-        form a {
-            text-decoration: none;
-            color: #ddd;
-            font-size: 12px;
-        }
-        form a:hover {
-            text-shadow: 2px 2px 6px #00000040;
-        }
-        form a:active {
-            text-shadow: none;
-        }
-        form input {
-            background: transparent;
-            width: 200px;
-            padding: 1em;
-            margin-bottom: 2em;
-            border: none;
-            border-left: 1px solid rgba(255, 255, 255, 0.3);
-            border-top: 1px solid rgba(255, 255, 255, 0.3);
-            border-radius: 5000px;
-            backdrop-filter: blur(5px);
-            box-shadow: 4px 4px 60px rgba(0, 0, 0, 0.2);
-            color: #fff;
-            font-family: Montserrat, sans-serif;
-            font-weight: 500;
-            transition: all 0.2s ease-in-out;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-        }
-        form input:hover {
-            background: rgba(255, 255, 255, 0.1);
-            box-shadow: 4px 4px 60px 8px rgba(0, 0, 0, 0.2);
-        }
-        form input[type="email"]:focus, form input[type="password"]:focus {
-            background: rgba(255, 255, 255, 0.1);
-            box-shadow: 4px 4px 60px 8px rgba(0, 0, 0, 0.2);
-        }
-        form input[type="button"] {
-            margin-top: 10px;
-            width: 150px;
-            font-size: 1rem;
-        }
-        form input[type="button"]:hover {
-            cursor: pointer;
-
-        }
-        form input[type="button"]:active {
-            background: rgba(255, 255, 255, 0.2);
-        }
-        form:hover {
-            margin: 4px;
-        }
-        ::placeholder {
-            font-family: Montserrat, sans-serif;
-            font-weight: 400;
-            color: #fff;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-        }
-        .drop {
-            background: rgba(255, 255, 255, 0.3);
-            backdrop-filter: blur(10px);
-            border-radius: 10px;
-            border-left: 1px solid rgba(255, 255, 255, 0.3);
-            border-top: 1px solid rgba(255, 255, 255, 0.3);
-            box-shadow: 10px 10px 60px -8px rgba(0, 0, 0, 0.2);
-            position: absolute;
-            transition: all 0.2s ease;
-        }
-        .drop-1 {
-            height: 80px;
-            width: 80px;
-            top: -20px;
-            left: -40px;
-            z-index: -1;
-        }
-        .drop-2 {
-            height: 80px;
-            width: 80px;
-            bottom: -30px;
-            right: -10px;
-        }
-        .drop-3 {
-            height: 100px;
-            width: 100px;
-            bottom: 120px;
-            right: -50px;
-            z-index: -1;
-        }
-        .drop-4 {
-            height: 120px;
-            width: 120px;
-            top: -60px;
-            right: -60px;
-        }
-        .drop-5 {
-            height: 60px;
-            width: 60px;
-            bottom: 170px;
-            left: 90px;
-            z-index: -1;
-        }
-        a, input:focus, select:focus, textarea:focus, button:focus {
-            outline: none;
-        }
-@media only screen and (min-width: 768px) {
-            .container {
-                width: 50%;
-                /* Adjust the width percentage as needed */
-            }
-            form {
-                width: 100%;
-                /* Adjust the width percentage as needed */
-                max-width: 480px;
-                /* Adjust the maximum width as needed */
-            }
-        }
-        form input[type="button"] {
-            margin-top: 0.6rem;
-            margin-bottom: 0.6rem;
-            width: 100px;
-            /* Adjust the width as needed */
-            font-size: 0.8rem;
-            /* Adjust the font size as needed */
-            padding: 0.5em;
-            /* Adjust the padding as needed */
-        }
-        form input[type="radio"] {
-            /* Reset previous styles */
-            width: initial;
-            margin: initial;
-
-            /* Apply default browser styling or your custom styling */
-            /* Add your new styling here */
+            background: var(--bg-gradient);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text);
+            padding: 20px;
         }
 
-        form input[type="radio"] {
-            /* Apply styles similar to other inputs */
-            background: transparent;
-            padding: 0.5em;
-            margin-bottom: 2em;
-            font-family: Montserrat, sans-serif;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-            margin-right: 10px;
-            /* Adjust spacing between radio buttons */
+        /* Ambient Glow Blobs */
+        .glow-1 {
+            position: fixed; top: -10%; left: -10%; width: 400px; height: 400px;
+            background: radial-gradient(circle, rgba(139, 92, 246, 0.2) 0%, transparent 70%);
+            filter: blur(50px); z-index: -1;
+        }
+        .glow-2 {
+            position: fixed; bottom: -10%; right: -10%; width: 400px; height: 400px;
+            background: radial-gradient(circle, rgba(236, 72, 153, 0.15) 0%, transparent 70%);
+            filter: blur(50px); z-index: -1;
         }
 
-        label {
-            color: rgba(255, 255, 255, 0.8);
-        }
-        form select {
-            background: transparent;
-            padding: 1em;
-            margin-bottom: 2em;
-            border: none;
-            border-left: 1px solid rgba(255, 255, 255, 0.3);
-            border-top: 1px solid rgba(255, 255, 255, 0.3);
-            border-radius: 5px;
-            backdrop-filter: blur(5px);
-            box-shadow: 4px 4px 60px rgba(0, 0, 0, 0.2);
-            color: #fff;
-            font-family: Montserrat, sans-serif;
-            font-weight: 500;
-            transition: all 0.2s ease-in-out;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-            width: 200px;
-            /* Set the width as needed */
-            text-align: center;
+        .card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(25px);
+            -webkit-backdrop-filter: blur(25px);
+            border: 1px solid var(--glass-border);
+            border-radius: 30px;
+            padding: 35px;
+            width: 100%;
+            max-width: 400px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+            animation: fadeIn 0.6s ease-out;
         }
 
-        form select:hover {
-            background: rgba(255, 255, 255, 0.1);
-            box-shadow: 4px 4px 60px 8px rgba(0, 0, 0, 0.2);
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+        .header h1 { font-weight: 800; font-size: 26px; margin-bottom: 25px; text-align: center; letter-spacing: -0.5px; }
+
+        .input-group { margin-bottom: 20px; }
+        .label { font-size: 12px; font-weight: 600; color: rgba(255,255,255,0.6); margin-bottom: 8px; display: block; }
+
+        input, select {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.07);
+            border: 1px solid var(--glass-border);
+            padding: 12px 16px;
+            border-radius: 12px;
+            color: white;
+            font-size: 15px;
+            transition: 0.2s;
         }
 
-        form select:focus {
-            background: rgba(255, 255, 255, 0.1);
-            box-shadow: 4px 4px 60px 8px rgba(0, 0, 0, 0.2);
+        input:focus { border-color: var(--primary); outline: none; background: rgba(255,255,255,0.12); }
+
+        /* Toggle Mode Switch */
+        .mode-switch {
+            display: flex; background: rgba(0,0,0,0.2); border-radius: 12px; padding: 4px; margin-bottom: 25px;
         }
-
-
-
-
-        #Regular,#Backlog {
-            display: inline-block;
+        .mode-switch input { display: none; }
+        .mode-switch label {
+            flex: 1; text-align: center; padding: 8px; cursor: pointer; border-radius: 9px;
+            font-size: 14px; font-weight: 600; color: rgba(255,255,255,0.5);
         }
-        .dashboard-link {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #fff;
-            color: #333;
-            text-decoration: none;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease;
-            margin:6px;
+        .mode-switch input:checked + label { background: var(--primary); color: white; box-shadow: 0 4px 10px rgba(139, 92, 246, 0.3); }
+
+        /* Button Grid */
+        .grid-options { display: flex; gap: 10px; margin-bottom: 25px; }
+        .check-btn { flex: 1; }
+        .check-btn input { display: none; }
+        .check-btn label {
+            display: block; padding: 10px; text-align: center; background: rgba(255,255,255,0.05);
+            border: 1px solid var(--glass-border); border-radius: 10px; cursor: pointer;
+            font-size: 13px; font-weight: 600; transition: 0.3s;
         }
+        .check-btn input:checked + label { border-color: var(--secondary); background: rgba(236, 72, 153, 0.1); color: var(--secondary); }
 
-        .dashboard-link:hover {
-            background-color: #f0f0f0;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        .btn-action {
+            width: 100%; padding: 15px; border-radius: 12px; border: none; font-weight: 700;
+            cursor: pointer; transition: 0.3s; margin-bottom: 10px; font-size: 15px;
         }
+        .btn-view { background: linear-gradient(90deg, var(--primary), #a855f7); color: white; }
+        .btn-view:hover { filter: brightness(1.1); transform: translateY(-1px); }
+        
+        .btn-admit { background: rgba(255,255,255,0.08); color: white; border: 1px solid var(--glass-border); }
+        .btn-admit:hover { background: rgba(255,255,255,0.12); }
 
-    </style>
-    <style>
-    .info-container {
-      position: absolute;
-      display: inline-block;
-      cursor: pointer;
-      left: 5%;
-      top: 3%;
-    }
-
-    .info-icon {
-      background-color: transparent;
-      color: white;
-      border: none;
-      border-radius: 50%;
-      padding: 8px 12px;
-      font-size: 16px;
-    }
-
-    .info-text {
-      visibility: hidden;
-      width: 200px;
-      background-color: #333;
-      color: #fff;
-      text-align: left;
-      border-radius: 6px;
-      padding: 8px;
-      position: absolute;
-      z-index: 1;
-      top: 50%;
-      left: 110%;
-      transform: translateY(-50%);
-      opacity: 0;
-      transition: opacity 0.3s;
-    }
-
-    .info-container:hover .info-text {
-      visibility: visible;
-      opacity: 1;
-    }
+        .detained-box { font-size: 12px; color: #fda4af; display: flex; align-items: center; gap: 8px; margin-bottom: 15px; }
     </style>
 </head>
 <body>
 
+<div class="glow-1"></div>
+<div class="glow-2"></div>
 
-    <div class="container">
-        <form>
-            
-            <div class="info-container">
-                <button class="info-icon">ℹ️</button>
-                    <div class="info-text" style="font-size: 16px; line-height: 1.6; max-width: 600px;">
-                        ✅ Please log in at 
-                        <a href="https://csvtu.digivarsity.online/Account/Login" 
-                                target="_blank" 
-                                
-                                style="font-size: 1em; font-style: italic; color: #c1dcb3">
-                                CSVTU Official Website
-                        </a> 
-                        and then return to this platform to continue.
-                    </div>
+<div class="card">
+    <div class="header">
+        <h1 style="background: linear-gradient(to right, #818cf8, #c084fc); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Swift Search</h1>
+        <div id="motto" style="font-size: 11px; color: var(--dim); text-align: center; margin-bottom: 15px; font-style: italic;">
+    "Loading your destiny... please hold your breath."
+</div>
 
-            </div>
-            
-            <p>
-                Welcome
-            </p>
-            <input type="radio" name="option" id="Regular" value="Regular" onclick="showInputField()" checked> <label for="Regular">Regular</label>
-            <input type="radio" name="option" id="Backlog" value="Backlog" onclick="showInputField()"> <label for="Backlog"> Backlog</label><br>
-
-            <input type="number" placeholder="Roll No." id="rollNo" required><br>
-            <span id="formSemS"> </span><br>
-            <div id="inputField" style="display: none;">
-                <br>
-                <input type="number" id="yearBack" placeholder="Year of Backlog"><br>
-                <select name="month" id="months">
-                    <option value="APR-MAY">April-May</option>
-                    <option value="NOV-DEC">November-December</option>
-                </select>
-            </div>
-
-            <div>
-                <div class="form-check">
-                    <input class="form-check-input" style="width:1em;" type="checkbox" value="RTRV" id="RTRV">
-                    <label class="form-check-label" for="RTRV">
-                        RTRV
-                    </label>
-                </div>
-
-                <div class="form-check">
-                    <input class="form-check-input" style="width:1em;" type="checkbox" value="RRV" id="RRV">
-                    <label class="form-check-label" for="RRV">
-                        RRV
-                    </label>
-                </div>
-            </div>
-
-
-
-            <!--<input type="button" value="Result" onclick="result_search()">-->
-            <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="CSVTU Privacy Policy Notice:\n\nViewing another student's result is not allowed. Please access only your own result as per CSVTU privacy policy">
-             RESULT
-            </button>
-            <input type="button" value="Admit Card" onclick="admit_search()"><br>
-        </form>
-        <a href="https://n00biex.github.io/html/" class="dashboard-link">Go to Dashboard</a>
-
-        <div class="drops">
-            <div class="drop drop-1"></div>
-            <div class="drop drop-2"></div>
-            <div class="drop drop-3"></div>
-            <div class="drop drop-4"></div>
-            <div class="drop drop-5"></div>
-        </div>
     </div>
-    <script type="text/javascript" charset="utf-8">
-        var select = document.createElement("select");
-        select.setAttribute("id", "mySem");
-        select.setAttribute("name", "semester");
 
-        var option = document.createElement("option");
-        option.value = 1;
-        option.text = "Semester";
-        select.appendChild(option);
-        for (var i = 1; i <= 8; i++) {
-            var option = document.createElement("option");
-            option.value = i;
-            option.text = i;
-            select.appendChild(option);
-            option.style.color = "black";
-        }
+    <form>
+        <div class="mode-switch">
+            <input type="radio" name="m" id="Regular" checked onclick="toggle(false)">
+            <label for="Regular">Regular</label>
+            <input type="radio" name="m" id="Backlog" onclick="toggle(true)">
+            <label for="Backlog">Backlog</label>
+        </div>
 
-        document.body.appendChild(select);
-        
+        <div class="input-group">
+            <label class="label">Roll Number</label>
+            <input type="text" inputmode="numeric" id="rollNo" placeholder="Enter Roll No">
+        </div>
+
+        <div class="input-group">
+            <label class="label">Semester</label>
+            <select id="mySem"></select>
+        </div>
+
+        <div class="detained-box" id="dBox">
+            <input type="checkbox" id="isDetained">
+            <label for="isDetained">Apply 1 Year Detained Offset</label>
+        </div>
+
+        <div id="bFields" style="display: none; margin-bottom: 20px;">
+            <label class="label">Session & Year</label>
+            <select id="months" style="margin-bottom:8px;">
+                <option value="APR-MAY">APR-MAY</option>
+                <option value="NOV-DEC">NOV-DEC</option>
+            </select>
+            <input type="number" id="yearBack" placeholder="Year (e.g. 2025)">
+        </div>
+
+        <label class="label">Exam Type</label>
+        <div class="grid-options">
+            <div class="check-btn">
+                <input type="checkbox" id="RTRV" onclick="one(this)">
+                <label for="RTRV">RTRV</label>
+            </div>
+            <div class="check-btn">
+                <input type="checkbox" id="RRV" onclick="one(this)">
+                <label for="RRV">RRV</label>
+            </div>
+        </div>
+
+        <button type="button" class="btn-action btn-view" onclick="result_search()">Get Result</button>
+        <button type="button" class="btn-action btn-admit" onclick="admit_search()">Admit Card</button>
+    </form>
+</div>
+
+<script>
+    const s = document.getElementById('mySem');
+    for(let i=1; i<=8; i++) s.innerHTML += `<option value="${i}">Semester ${i}</option>`;
+
+    function toggle(b) {
+
+    document.getElementById('bFields').style.display = b ? 'block' : 'none';
+    document.getElementById('dBox').style.display = b ? 'none' : 'flex';
+
+    document.getElementById('RTRV').checked = false;
+    document.getElementById('RRV').checked = false;
+
+    if(!b){
+        document.getElementById('yearBack').value="";
+    }
+}
 
 
-        var form = document.getElementById("formSemS");
-        form.appendChild(select);
+// Keep your existing 'one' function for the checkboxes
+function one(c) {
+    const isRTRV = document.getElementById('RTRV');
+    const isRRV = document.getElementById('RRV');
+    
+    // If clicking one, uncheck the other
+    if (c.id === 'RTRV') isRRV.checked = false;
+    if (c.id === 'RRV') isRTRV.checked = false;
+}
 
 
-    </script>
-    <script type="text/javascript" charset="utf-8"src="js/RAscript.js"></script>
-    <script>
-  alert("⚠️ CSVTU Privacy Policy Notice:\n\nViewing another student's result is not allowed. Please access only your own result as per CSVTU privacy policy.");
+    // function one(c) {
+    //     document.getElementById('RTRV').checked = false;
+    //     document.getElementById('RRV').checked = false;
+    //     c.checked = true;
+    // }
+    
+    const lines = [
+    "One sheet of paper can't decide my future, but this PDF might.",
+    "Checking if the examiner was in a good mood today...",
+    "Engineering: Where 'Pass' is the new 'Topper'.",
+    "May the 'Grace Marks' be with you.",
+    "Don't worry, even Einstein had backlogs (probably).",
+    "Processing your results... Stay hydrated.",
+    "Remember, your CGPA is just a number. A very scary number.",
+    "Searching for your marks in the CSVTU abyss...",
+    "Whatever happens, the Chai at the canteen still tastes the same."
+];
+
+// Pick one randomly on load
+window.onload = () => {
+    document.getElementById('motto').innerText =
+        lines[Math.floor(Math.random() * lines.length)];
+}
+
 </script>
-
-</body>
+<script src="js/RAscript.js"></script>
 </body>
 </html>
