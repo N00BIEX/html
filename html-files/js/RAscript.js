@@ -64,8 +64,8 @@ function result_search() {
 
     const ResultLink = `https://csvtu.digivarsity.online/WebApp/Result/SemesterResult.aspx?S=${data.sem}%20Semester&E=${data.month}%20${data.yearRR}&R=${data.rollNo}&T=${type}`;
     
-    // window.open(ResultLink, '_blank').focus();
-    alert(ResultLink)
+    window.open(ResultLink, '_blank').focus();
+    //alert(ResultLink)
 }
 
 function admit_search() {
